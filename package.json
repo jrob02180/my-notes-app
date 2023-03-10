@@ -1,0 +1,23 @@
+{
+  "name": "my-notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrob02180/my-notes-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrob02180/my-notes-app/issues"
+  },
+  "homepage": "https://github.com/jrob02180/my-notes-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
