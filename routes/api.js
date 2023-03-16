@@ -14,19 +14,16 @@ router.get('/notes', (req, res) => {
 
 // save new notes
 router.post('/notes', (req, res) => {
-console.log('here');
 if (req.body) {
     const { title, text} = req.body;
     const newNote = {
         title,
         text,
-        id: uuid4(),
+        noteId: uuid4(),
     };
     fs.readFile(path.resolve(__dirname, '..', 'db/db.json'), 'utf8', (err, data) => {
         console.log(data)
         let newData = JSON.parse(data)
-        console.log('new data', newData)
-
         newData.push(newNote)
 
         let changedData = JSON.stringify(newData)
@@ -38,7 +35,5 @@ if (req.body) {
     })
 }
 });
-
-
 
 module.exports = router
